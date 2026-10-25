@@ -8,7 +8,9 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173",
+        "https://prep-stand-8y1xaayu8-krishna-95c2.vercel.app"
+    ],
     credentials: true
 }))
 
